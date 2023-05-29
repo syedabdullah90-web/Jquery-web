@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jquery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('a').click(function () {
+                $(this).css('background-color', 'green')
+            })
+            var newDiv = $("<div>");
+            newDiv.addClass("content");
+            $(".scetion1").append(newDiv);
+
+            let h4 = $("<h4>Implatologie</h4>");
+            $(".content").append(h4);
+            let paraone = $(`<p>wir wollen mit dem Vorurteil aufräumen, die Behandlung beim Zahnarzt sei grob
+                            und schmerzhaft. Aufgrund mehrjähriger Erfahrung und Anwendung modernster
+                            Behandlungsmethoden sind wir in der Lage, nach einem individuellen Beratungsgespräch die
+                            beste und schonendste Behandlungsmethode zu ent entwickeln und anzuwenden.</p>`);
+            paraone.addClass('paraone');
+            $(".content").append(paraone) ;
+
+            let h4s1=$("<h4>Zahnheilkunde</h4>");
+            $(".sectionone").append(h4s1);
+
+            let paratwo = $(`<p>wir wollen mit dem Vorurteil aufräumen, die Behandlung beim Zahnarzt sei grob und
+                        schmerzhaft. Aufgrund mehrjähriger Erfahrung und Anwendung modernster Behandlungsmethoden sind
+                        wir in der Lage, nach einem individuellen Beratungsgespräch die beste und schonendste
+                        Behandlungsmethode zu ent entwickeln und anzuwenden.</p>`);
+                        paratwo.addClass('paratwo');
+                        $(".sectionone").append(paratwo);
+
+            let h4s2=$("<h4>Zahnheilkunde</h4>");
+            $(".content-3").append(h4s2);
+
+            let para3=$(`<p>wir wollen mit dem Vorurteil aufräumen, die Behandlung beim Zahnarzt sei grob und schmerzhaft. Aufgrund mehrjähriger Erfahrung und Anwendung modernster
+                            Behandlungsmethoden sind wir in der Lage, nach einem individuellen Beratungsgespräch die
+                            beste und schonendste Behandlungsmethode zu ent entwickeln und anzuwenden.</p>`);
+             para3.addClass('para3');
+             $(".content-3").append(para3)
+        })
+    </script>
+</head>
+
+<body>
+   
+        <div class="container">
+            <div class="logo">
+                <img src="./images/Vektor-Smart-Objekt.png" alt="logo">
+            </div>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Praxis </a></li>
+                        <li><a href="">Leistungen</a></li>
+                        <li><a href="">Anfahrt</a></li>
+                        <li><a href="">Kontakt </a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="sectionone">
+                    <div class="content">
+                        
+                    </div>
+                    <div class="image">
+                        <img src="./images/Ebene-22-Kopie.png" alt="">
+                    </div>
+                   
+                </section>
+                <section class="sectiontwo">
+
+                    <div class="image2">
+                        <img src="./images/Ebene-22-Kopie.png" alt="">
+                    </div>
+                    <div class="content-3">
+                       
+                    </div>
+                    <div class="image3">
+                        <img src="./images/Ebene-22-Kopie.png" alt="">
+                    </div>
+        </div>
+        </section>
+
+        </main>
+        <footer>
+            <p>Alle Inhalte © 2011 Dr. med.dent. Claus Hillmann | IMPRESSUM </p>
+        </footer>
+
+    </div>
+    
+</body>
+
+</html>
